@@ -1,0 +1,13 @@
+
+.charts-box {
+	width: 100%;
+	padding: 0 15px 15px 15px;
+	background-color: #eee;
+	box-sizing: border-box;
+}
+.charts-column {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 15px 5px 5px 5px;
+}
+

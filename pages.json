@@ -1,0 +1,198 @@
+{
+	"lazyCodeLoading": "requiredComponents",
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#1296db",
+				"navigationBarTextStyle": "white"
+
+			}
+
+		}, {
+			"path": "pages/duty/duty",
+			"style": {
+				"navigationBarTitleText": "集中值守",
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+		, {
+
+
+		}, {
+			"path": "pages/homepages/SiteManagement/SiteManagement",
+			"style": {
+				"navigationBarTitleText": "场内车辆管理",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/homepages/EntryExitRecords/EntryExitRecords",
+			"style": {
+				"navigationBarTitleText": "出入记录",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/homepages/FeeRecords/FeeRecords",
+			"style": {
+				"navigationBarTitleText": "收费记录",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/homepages/BlackWhiteListManagement/BlackWhiteListManagement",
+			"style": {
+				"navigationBarTitleText": "黑白名单管理",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/homepages/Coupon/Coupon",
+			"style": {
+				"navigationBarTitleText": "优惠券",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/homepages/OwnerCarManagement/OwnerCarManagement",
+			"style": {
+				"navigationBarTitleText": "业主车管理",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/homepages/MonthlyfeeparkspaceManagement/MonthlyfeeparkspaceManagement",
+			"style": {
+				"navigationBarTitleText": "月费车位管理",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/homepages/RemoteOpening/RemoteOpening",
+			"style": {
+				"navigationBarTitleText": "远程开闸",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mypages/changepassword/changepassword",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mypages/Visitorregistration/Visitorregistration",
+			"style": {
+				"navigationBarTitleText": "访客登记",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mypages/Feedback/Feedback",
+			"style": {
+				"navigationBarTitleText": "意见反馈",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mypages/Aboutus/Aboutus",
+			"style": {
+				"navigationBarTitleText": "关于我们",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/homepages/SiteManagement/SiteManainfo",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/homepages/EntryExitRecords/EntryExit",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/homepages/FeeRecords/Fee",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"subPackages": [{
+		"root": "homepages",
+		"pages": [{
+			"path": "pages/homepages/OverViewPark/OverViewPark",
+			"style": {
+				"navigationBarTitleText": "车场概况",
+				"enablePullDownRefresh": false
+			}
+		}]
+	}],
+	"tabBar": {
+		"color": "#515151",
+		"selectedColor": "#1296db",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbaricon/index.png",
+				"selectedIconPath": "static/tabbaricon/indexclick.png"
+			},
+			{
+				"text": "集中值守",
+				"pagePath": "pages/duty/duty",
+				"iconPath": "static/tabbaricon/duty.png",
+				"selectedIconPath": "static/tabbaricon/dutyclick.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/my/my",
+				"iconPath": "static/tabbaricon/my.png",
+				"selectedIconPath": "static/tabbaricon/myclick.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"fui-(.*)": "@/components/firstui/fui-$1/fui-$1.vue"
+		}
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

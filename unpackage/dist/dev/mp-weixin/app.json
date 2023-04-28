@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/duty/duty",
+    "pages/homepages/OverViewPark/OverViewPark",
+    "pages/homepages/SiteManagement/SiteManagement",
+    "pages/homepages/EntryExitRecords/EntryExitRecords",
+    "pages/homepages/FeeRecords/FeeRecords",
+    "pages/homepages/BlackWhiteListManagement/BlackWhiteListManagement",
+    "pages/homepages/Coupon/Coupon",
+    "pages/homepages/OwnerCarManagement/OwnerCarManagement",
+    "pages/homepages/MonthlyfeeparkspaceManagement/MonthlyfeeparkspaceManagement",
+    "pages/homepages/RemoteOpening/RemoteOpening",
+    "pages/mypages/changepassword/changepassword",
+    "pages/mypages/Visitorregistration/Visitorregistration",
+    "pages/mypages/Feedback/Feedback",
+    "pages/mypages/Aboutus/Aboutus",
+    "pages/homepages/SiteManagement/SiteManainfo",
+    "pages/homepages/EntryExitRecords/EntryExit",
+    "pages/homepages/FeeRecords/Fee"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbaricon/index.png",
+        "selectedIconPath": "static/tabbaricon/indexclick.png"
+      },
+      {
+        "text": "集中值守",
+        "pagePath": "pages/duty/duty",
+        "iconPath": "static/tabbaricon/duty.png",
+        "selectedIconPath": "static/tabbaricon/dutyclick.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "static/tabbaricon/my.png",
+        "selectedIconPath": "static/tabbaricon/myclick.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

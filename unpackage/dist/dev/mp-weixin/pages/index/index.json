@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "charttrafficvolume": "/components/charttrafficvolume/charttrafficvolume",
+    "exit-record": "/components/ExitRecord/ExitRecord",
+    "overviewpark": "/pages/homepages/OverViewPark/OverViewPark",
+    "chartevenue": "/components/chartrevenue/chartrevenue"
+  }
+}
