@@ -5,7 +5,7 @@
   },
   "setting": {
     "urlCheck": false,
-    "es6": true,
+    "es6": false,
     "postcss": false,
     "minified": false,
     "newFeature": true,
@@ -14,7 +14,7 @@
   "compileType": "miniprogram",
   "libVersion": "",
   "appid": "wx67229244e1bedfd9",
-  "projectname": "uni-app",
+  "projectname": "Carpark",
   "condition": {
     "search": {
       "current": -1,

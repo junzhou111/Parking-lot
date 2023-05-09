@@ -21,11 +21,11 @@
 		<view class="my-function-box">
 			<view class="my-function" v-for="(item , index) in datalist" :key="index" @click="handelmypages(index)">
 				<view class="function-left">
-					<fui-icon class="left-icon" :name="item.icon"></fui-icon>
+					<u-icon class="left-icon" :name="item.icon"></u-icon>
 					{{item.name}}
 				</view>
 				<view class="function-right">
-					<fui-icon name="arrowright"></fui-icon>
+					<u-icon name="arrow-right"></u-icon>
 				</view>
 			</view>
 		</view>

@@ -3,7 +3,7 @@
   "usingComponents": {
     "charttrafficvolume": "/components/charttrafficvolume/charttrafficvolume",
     "exit-record": "/components/ExitRecord/ExitRecord",
-    "overviewpark": "/pages/homepages/OverViewPark/OverViewPark",
+    "overviewpark": "/pages/OverViewPark/OverViewPark",
     "chartevenue": "/components/chartrevenue/chartrevenue"
   }
 }

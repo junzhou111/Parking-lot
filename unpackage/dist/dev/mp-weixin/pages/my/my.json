@@ -4,6 +4,6 @@
   "navigationBarBackgroundColor": "#1296db",
   "navigationBarTextStyle": "white",
   "usingComponents": {
-    "fui-icon": "/components/firstui/fui-icon/fui-icon"
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon"
   }
 }

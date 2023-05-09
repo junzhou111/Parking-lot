@@ -1,5 +1,8 @@
 import App from './App'
 
+// 引入uview组件
+import uView from './uni_modules/uview-ui'
+Vue.use(uView)
 // #ifndef VUE3
 import Vue from 'vue'
 Vue.config.productionTip = false
@@ -7,12 +10,8 @@ App.mpType = 'app'
 // request
 import {
 	request
-} from "./utils/request.js"
-Vue.prototype.request = request
-
-// vuex
-import store from './store'
-Vue.prototype.$store = store
+} from "./utils/request.js";
+Vue.prototype.request = request;
 
 try {
 	function isPromise(obj) {
@@ -43,7 +42,6 @@ try {
 } catch (error) {}
 
 const app = new Vue({
-	store,
 	...App
 })
 app.$mount()
@@ -60,5 +58,3 @@ export function createApp() {
 	}
 }
 // #endif
-import uView from '@/uni_modules/uview-ui'
-Vue.use(uView)

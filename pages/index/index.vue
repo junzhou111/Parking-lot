@@ -4,16 +4,24 @@
 		<swiper class="swiper" previous-margin="30px" next-margin="30px" :indicator-dots="true" :interval="4000"
 			autoplay="true" easing-function="easeInOutCubic" :duration="800" circular="true">
 			<swiper-item class="swiper-item">
-				<image class="swiperimg" src="../../static/swiper/img1.jpg"></image>
+				<image class="swiperimg"
+					src="https://images.weserv.nl/?url=https://up.enterdesk.com/edpic_source/84/f7/fc/84f7fcc08f21419a860dbedde45fe233.jpg">
+				</image>
 			</swiper-item>
 			<swiper-item class="swiper-item">
-				<image class="swiperimg" src="../../static/swiper/img2.jpg"></image>
+				<image class="swiperimg"
+					src="https://images.weserv.nl/?url=https://up.enterdesk.com/edpic_source/55/55/1a/55551aae5ca1c38abfa33a6d5a76febb.jpg">
+				</image>
 			</swiper-item>
 			<swiper-item class="swiper-item">
-				<image class="swiperimg" src="../../static/swiper/img3.jpg"></image>
+				<image class="swiperimg"
+					src="https://images.weserv.nl/?url=https://up.enterdesk.com/edpic_source/e2/54/eb/e254ebc4876b2d66bc48af9fb579607f.jpg">
+				</image>
 			</swiper-item>
 			<swiper-item class="swiper-item">
-				<image class="swiperimg" src="../../static/swiper/img4.jpg"></image>
+				<image class="swiperimg"
+					src="https://images.weserv.nl/?url=https://up.enterdesk.com/edpic_source/9c/8b/ab/9c8babff05868d2836947aea484bb238.jpg">
+				</image>
 			</swiper-item>
 		</swiper>
 		<!-- 分类模块 -->
@@ -39,11 +47,11 @@
 </template>
 
 <script>
-	import Overviewpark from "../homepages/OverViewPark/OverViewPark.vue"
+	import Overviewpark from "@/pages/OverViewPark/OverViewPark.vue"
 	import charttrafficvolume from "../../components/charttrafficvolume/charttrafficvolume.vue"
 	import chartevenue from "../../components/chartrevenue/chartrevenue.vue"
 	import ExitRecord from "../../components/ExitRecord/ExitRecord.vue"
-	import store from "../../store/index.js"
+
 	import {
 		Carfactoryoverview,
 		parkinglot,
@@ -52,50 +60,6 @@
 	export default {
 		data() {
 			return {
-				i: '&#xe62a;',
-				title: [{
-						id: 2,
-						name: "场内车辆管理",
-						type: "SiteManagement",
-						icon: "https://postimg.cc/FYh51bGX"
-					}, {
-						id: 3,
-						name: "出入记录",
-						type: "EntryExitRecords",
-						icon: "https://postimg.cc/jwBYjG3M",
-					}, {
-						id: 4,
-						name: "收费记录",
-						type: "FeeRecords",
-						icon: "https://postimg.cc/QK5GK0Rh",
-					}, {
-						id: 5,
-						name: "黑白名单管理",
-						type: "BlackWhiteListManagement",
-						icon: "https://postimg.cc/bGCj7Gxc",
-					}, {
-						id: 6,
-						name: "优惠券",
-						type: "Coupon",
-						icon: "https://postimg.cc/0MzqP8n6",
-					}, {
-						id: 7,
-						name: "业主车管理",
-						type: "OwnerCarManagement",
-						icon: "https://postimg.cc/nCbtffDz",
-					}, {
-						id: 8,
-						name: "月费车位管理",
-						type: "MonthlyfeeparkspaceManagement",
-						icon: "https://postimg.cc/Bt1Gzntk",
-					},
-					{
-						id: 9,
-						name: "远程开闸",
-						type: "RemoteOpening",
-						icon: "https://postimg.cc/0bY18XYC",
-					}
-				],
 				// 跳转路由暂存 
 				titlerouters: "",
 				// 车位营收数据
@@ -130,10 +94,10 @@
 		methods: {
 			// 路由模块跳转
 			handelinfo(index) {
-				this.titlerouters = this.menu[index].key
-				var urls = "/pages/homepages/"
+				var titlerouters = this.menu[index].key
+				var urls = "/homepages/"
 				uni.navigateTo({
-					url: urls + this.titlerouters + "/" + this.titlerouters
+					url: urls + titlerouters + "/" + titlerouters
 				})
 			},
 			async getCarfactoryoverview() {

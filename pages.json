@@ -13,6 +13,12 @@
 				"navigationBarTitleText": "首页"
 			}
 		}, {
+			"path": "pages/OverViewPark/OverViewPark",
+			"style": {
+				"navigationBarTitleText": "车场概况",
+				"enablePullDownRefresh": false
+			}
+		}, {
 			"path": "pages/my/my",
 			"style": {
 				"navigationBarTitleText": "我的",
@@ -29,64 +35,79 @@
 				"enablePullDownRefresh": false
 			}
 
-		}
-
-		, {
-
-
 		}, {
-			"path": "pages/homepages/SiteManagement/SiteManagement",
+			"path": "homepages/SiteManagement/SiteManagement",
 			"style": {
 				"navigationBarTitleText": "场内车辆管理",
 				"enablePullDownRefresh": false
 			}
-
 		}, {
-			"path": "pages/homepages/EntryExitRecords/EntryExitRecords",
+			"path": "homepages/EntryExitRecords/EntryExitRecords",
 			"style": {
 				"navigationBarTitleText": "出入记录",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/homepages/FeeRecords/FeeRecords",
+			"path": "homepages/FeeRecords/FeeRecords",
 			"style": {
 				"navigationBarTitleText": "收费记录",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/homepages/BlackWhiteListManagement/BlackWhiteListManagement",
+			"path": "homepages/BlackWhiteListManagement/BlackWhiteListManagement",
 			"style": {
 				"navigationBarTitleText": "黑白名单管理",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/homepages/Coupon/Coupon",
+			"path": "homepages/Coupon/Coupon",
 			"style": {
 				"navigationBarTitleText": "优惠券",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/homepages/OwnerCarManagement/OwnerCarManagement",
+			"path": "homepages/OwnerCarManagement/OwnerCarManagement",
 			"style": {
 				"navigationBarTitleText": "业主车管理",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/homepages/MonthlyfeeparkspaceManagement/MonthlyfeeparkspaceManagement",
+			"path": "homepages/MonthlyfeeparkspaceManagement/MonthlyfeeparkspaceManagement",
 			"style": {
 				"navigationBarTitleText": "月费车位管理",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/homepages/RemoteOpening/RemoteOpening",
+			"path": "homepages/RemoteOpening/RemoteOpening",
 			"style": {
 				"navigationBarTitleText": "远程开闸",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "homepages/SiteManagement/SiteManainfo",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "homepages/EntryExitRecords/EntryExit",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "homepages/FeeRecords/Fee",
+			"style": {
+				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
 
@@ -94,13 +115,6 @@
 			"path": "pages/mypages/changepassword/changepassword",
 			"style": {
 				"navigationBarTitleText": "修改密码",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/mypages/Visitorregistration/Visitorregistration",
-			"style": {
-				"navigationBarTitleText": "访客登记",
 				"enablePullDownRefresh": false
 			}
 
@@ -118,39 +132,26 @@
 				"enablePullDownRefresh": false
 			}
 
-		}, {
-			"path": "pages/homepages/SiteManagement/SiteManainfo",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/homepages/EntryExitRecords/EntryExit",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/homepages/FeeRecords/Fee",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
 		}
-	],
-	"subPackages": [{
-		"root": "homepages",
-		"pages": [{
-			"path": "pages/homepages/OverViewPark/OverViewPark",
-			"style": {
-				"navigationBarTitleText": "车场概况",
-				"enablePullDownRefresh": false
-			}
-		}]
-	}],
+	    ,{
+            "path" : "homepages/MonthlyfeeparkspaceManagement/Monthlyfeeparkspace",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "homepages/MonthlyfeeparkspaceManagement/AddMonthlyfeeparkspace",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"tabBar": {
 		"color": "#515151",
 		"selectedColor": "#1296db",

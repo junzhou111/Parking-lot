@@ -115,6 +115,16 @@ export const Obtainlist = (data) => {
 	})
 }
 
+// 优惠券管理
+export const couponlist = (data) => {
+	return request({
+		url: '_comapplet_Coupons',
+		method: 'POST',
+		data
+	})
+}
+
+
 // 业主车管理
 export const getcarmanage = (data) => {
 	return request({
@@ -140,6 +150,15 @@ export const getaddMonthlycar = (data) => {
 		data
 	})
 }
+// 获取月费价格
+export const getMonthlycarPrice = (data) => {
+	return request({
+		url: '_customer_Car',
+		method: 'POST',
+		data
+	})
+}
+
 
 
 
